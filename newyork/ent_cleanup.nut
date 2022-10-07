@@ -10,12 +10,10 @@ function DoClean(){
     printcl(100,100,200,"Cleaning unnecessary entities...")
     DestroyEntsGlobal("point_spotlight", false)
     DestroyEntsGlobal("spotlight_end", false)
-    DestroyEntsGlobal("env_soundscape", false)
 }
 
 function DoCleanManual(){
     printcl(100,100,200,"Cleaning unnecessary entities...")
     DestroyEntsGlobal("point_spotlight", false)
     DestroyEntsGlobal("spotlight_end", false)
-    DestroyEntsGlobal("env_soundscape", false)
 }

@@ -1,3 +1,12 @@
+/*
+    Setup a functional numerical display.
+    Features:
+        Display input number
+        Display server time
+        Create and display a keypad code
+*/
+
+
 local NDISPLAYELEMENTS = 5
 
 local displayname="sSegDisplay"

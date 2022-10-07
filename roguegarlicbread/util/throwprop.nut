@@ -2,7 +2,7 @@
 self.ConnectOutput("OnPhysGunDrop", "Dropped");
 
 local debug=0;
-local force=200;
+local force=300;
 
 function Dropped()
 {

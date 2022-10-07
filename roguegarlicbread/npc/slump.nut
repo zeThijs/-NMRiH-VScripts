@@ -14,6 +14,22 @@
 */
 
 
+
+function OnPostSpawn()
+{
+    AddThinkToEnt(self, "DelayedSlumpEnable")   //npc setup sometimes cancels enableslump, delay.
+}
+local spawncount = 0
+function DelayedSlumpEnable(){
+    if (spawncount >= 1){
+        self.StopThinkFunction();
+        EnableSlump();
+    }
+    spawncount++
+    return 1.0
+}
+
+
 local hActiveSequence = null;
 
 local thinkOverflow = 0
@@ -39,7 +55,7 @@ function DelayedNoPlayback(){
         self.StopThinkFunction();
         }
     thinkOverflow++
-    return 0.5
+    return 0.1
 }
 
 function SlumpRise(){
